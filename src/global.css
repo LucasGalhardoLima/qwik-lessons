@@ -1,0 +1,76 @@
+/**
+ * WHAT IS THIS FILE?
+ *
+ * Globally applied styles. No matter which components are in the page or matching route,
+ * the styles in here will be applied to the Document, without any sort of CSS scoping.
+ *
+ */
+
+:root {
+  --qwik-dark-blue: #006ce9;
+  --qwik-light-blue: #18b6f6;
+  --qwik-light-purple: #ac7ff4;
+  --qwik-dark-purple: #713fc2;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  padding: 80px 20px 20px 20px;
+  text-align: center;
+  background-color: #000;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  max-width: 90vw;
+  margin: 0 auto;
+  background-color: #000;
+  border-radius: 5px;
+  box-shadow: 0px 0px 130px -50px var(--qwik-light-purple);
+  overflow: hidden;
+  color: yellow;
+}
+
+
+h1,
+h2 {
+  margin: 0 0 5px 0;
+}
+
+.lightning {
+  filter: hue-rotate(180deg);
+}
+
+section {
+  padding: 20px;
+  border-bottom: 10px solid var(--qwik-dark-blue);
+}
+
+a.mindblow,
+a.todolist,
+button,
+input {
+  margin: 10px auto;
+  display: block;
+  background: var(--qwik-dark-purple);
+  padding: 10px 20px 14px;
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  width: fit-content;
+  box-shadow: inset 0px -4px 0px black;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🤯</text></svg>")
+      16 0,
+    auto; /*!emojicursor.app*/
+}
+
+a.mindblow:hover,
+a.todolist:hover {
+  box-shadow: inset 0px 4px 0px white;
+  padding: 14px 20px 10px;
+}
